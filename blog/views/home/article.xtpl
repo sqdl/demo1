@@ -1,0 +1,94 @@
+{{extend ('./layout')}}
+
+{{#block ('main')}}
+                    <div class="article">
+                        <h2 class="title">{{post.title}}</h2>
+                        {{{post.content}}}
+                    </div>
+                    <!-- 作者 -->
+                    <div class="author">
+                        <div class="avatar">
+                            <a href="/center">
+                                <img src="{{post.avatar}}" alt="">
+                            </a>
+                        </div>
+                        <div class="wrap-box">
+                            <!-- 个人资料 -->
+                            <div class="meta">
+                                <h4 class="name">
+                                    <a href="./center.html">{{post.name}}</a>
+                                </h4>
+                                <p class="intro">{{post.alt}}</p>
+                                <div class="extra">
+                                    <span class="icon-location"> 北京. 传智播客</span>
+                                    <span class="icon-link">
+                                        <a href="javascript:;">http://botue.com</a>
+                                    </span>
+                                    <span class="icon-twitter">
+                                        <a href="javascript:;"> @botue</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- 社区 -->
+                            <div class="social">
+                                <h4>分享</h4>
+                                <a href="javascript:;" class="icon-twitter"></a>
+                                <a href="javascript:;" class="icon-facebook"></a>
+                                <a href="javascript:;" class="icon-weibo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <footer class="footer">
+            <div class="wrapper">
+                <dl>
+                    <dt>合作网站</dt>
+                    <dd>
+                        <a href="javascript:;">传智播客</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">双元课堂</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">传智学院</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">博学谷在线教育平台</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd>
+                        <a href="javascript:;">Swift Note GaoWhen高H温</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">大猫の意淫网志 裁纸刀下</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">Smallni's blog 米随随s5s5</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">芒果 软件开发网 觉唯前端</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">JSER CSS HOUSE Time Machine</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">前端博客导航 WEB前端开发</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>关注我的微信</dt>
+                    <dd>
+                        <img class="qrcode" src="./images/qrcode.jpg" alt="">
+                    </dd>
+                </dl>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+{{/block}}
